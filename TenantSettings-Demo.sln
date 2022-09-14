@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenantSettings-Demo", "TenantSettings-Demo\TenantSettings-Demo.csproj", "{E1E62A14-0DB1-4E23-937A-CFBA16E8AB6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1E62A14-0DB1-4E23-937A-CFBA16E8AB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E62A14-0DB1-4E23-937A-CFBA16E8AB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E62A14-0DB1-4E23-937A-CFBA16E8AB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E62A14-0DB1-4E23-937A-CFBA16E8AB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F616A5F-A6E3-4428-93D9-C8521C38FB7A}
+	EndGlobalSection
+EndGlobal
