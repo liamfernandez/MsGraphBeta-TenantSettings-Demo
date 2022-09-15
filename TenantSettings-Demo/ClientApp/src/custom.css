@@ -16,3 +16,12 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rbga(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 15px 0 rgba(0,0,0, 0.37);
+}
