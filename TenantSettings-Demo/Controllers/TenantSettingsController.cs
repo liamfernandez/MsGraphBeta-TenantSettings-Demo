@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Graph;
 using Azure.Identity;
+using Newtonsoft.Json.Converters;
 
 namespace TenantSettings_Demo.Controllers
 {
@@ -28,6 +29,14 @@ namespace TenantSettings_Demo.Controllers
         {
             var settings = client.Admin.Sharepoint.Settings.Request().GetAsync().Result;
             return settings;
+        }
+
+        [HttpPatch]
+        public Microsoft.Graph.TenantAdmin.Settings Patch([FromBody] string settingsAsJson)
+        {
+            Microsoft.Graph.TenantAdmin.Settings settings = Newtonsoft.Json.JsonConvert.DeserializeObject<Microsoft.Graph.TenantAdmin.Settings>(settingsAsJson);
+            var response = client.Admin.Sharepoint.Settings.Request().UpdateAsync(settings).Result;
+            return response;
         }
     }
 }
