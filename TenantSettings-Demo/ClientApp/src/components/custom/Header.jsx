@@ -19,7 +19,7 @@ export class Header extends React.Component {
 export class Footer extends React.Component {
     render() {
         return(
-            <div className='inline-flex ml-[37vw] pr-3 w-auto h-[4.4vh] glass bg-blue-100'>
+            <div className='inline-flex ml-[39vw] pr-3 w-auto h-[4.4vh] glass bg-slate-300'>
                 <img src={warning} className='mx-2 w-[3.8vh]'/>
                 <p className='m-auto text-black  text-sm'>This web-app is developed for Demo purposes only.<br></br>
                 <p className=' text-center mr-5 mb-3'>&copy; Microsoft 2022</p></p>

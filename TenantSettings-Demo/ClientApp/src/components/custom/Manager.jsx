@@ -42,7 +42,7 @@ function PatchSettingsManager() {
                 <Label className='text-2xl text-sans'>Request</Label>
                 <div className='bg-gray-100 rounded-xl w-fit p-2 border-2 border-red-600'>
                     <code className=' bg-gray-100 text-red-600'><b> PATCH</b><br></br></code>
-                    <code className=' bg-gray-100 text-black'>https://graph.microsoft.com/beta/admin/sharepoint/settings</code>
+                    <code className=' bg-gray-100 text-black text-sm'>https://graph.microsoft.com/beta/admin/sharepoint/settings</code>
                 </div>
                 <PrimaryButton className='mt-2 text-white bg-red-600 border-black rounded-lg inline-flex' onClick={() => {
                     setFirstQueryMade(true)
@@ -80,7 +80,7 @@ function PatchSettingsManager() {
                             
                         })
                 }}> Submit Request</PrimaryButton>
-                <div id='input-body-Patch' className='w-[77%]'>
+                <div id='input-body-Patch' className='w-[90%]'>
                     <Label className='text-xl text-sans mt-4'>Request Body</Label>
                     <TextField id='patch-body' tabIndex={2} multiline autoAdjustHeight rows={10} className='rounded-2xl' placeholder={placeHolderString}>
 
@@ -126,16 +126,16 @@ function GetSettingsManager() {
         <div className='grid grid-cols-2'>
             <div className='bg-slate-300 text-left mt-3'>
                 <Label className='text-2xl text-sans'>Request</Label>
-                <div className='bg-gray-100 rounded-xl w-fit p-2 border-2 border-blue-600 '>
+                <div className='bg-gray-100 rounded-xl w-fit p-2 border-2 border-blue-600'>
                     <pre>
-                        <code className=' text-black'>
-                            <b className='text-blue-600'>GET </b>
+                        <code className=' text-black text-sm'>
+                            <b className='text-blue-600 text-base'>GET </b>
                             <br></br>
                             https://graph.microsoft.com/beta/admin/sharepoint/settings
                         </code>
                     </pre>
                 </div>
-                <PrimaryButton className=' mt-2 text-white bg-blue-600 border-black rounded-lg inline-flex' onClick={() => {
+                <PrimaryButton className='mt-2 text-white bg-blue-600 border-black rounded-lg inline-flex' onClick={() => {
                     setFirstQueryMade(true)
                     setLoading(true)
                     fetch('tenantsettings')
