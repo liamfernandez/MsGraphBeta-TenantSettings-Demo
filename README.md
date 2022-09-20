@@ -1,5 +1,5 @@
 # Tenant Settings Demo
----
+
 ## Description
 This application was created to demonstrate functionality of the new OneDrive/SharePoint Tenant Settings endpoint on Microsoft Graph.
 * [Ms-Graph Docs | SharePoint Tenant Settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta)

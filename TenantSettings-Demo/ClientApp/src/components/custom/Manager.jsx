@@ -97,7 +97,7 @@ function PatchSettingsManager() {
             </div>
             <div className='bg-slate-300 ml-4'>
                 <Label className='text-2xl text-sans text-left mt-3'>Results</Label>
-                <div id='Results-Box' className='bg-gray-100 rounded-md w-auto text-xs h-[67vh]'>
+                <div id='Results-Box' className='bg-gray-100 rounded-md w-auto text-xs h-auto'>
                     { (firstQueryMade) ?
                         (loading) ?
                             <Spinner className='pt-10' size={SpinnerSize.large} label='Updating Settings...'/>
@@ -166,7 +166,7 @@ function GetSettingsManager() {
             </div>
             <div className='bg-slate-300 ml-4'>
                 <Label className='text-2xl text-sans text-left mt-3'>Results</Label>
-                <div id='Results-Box' className='bg-gray-100 rounded-md w-auto text-xs h-[67vh]'>
+                <div id='Results-Box' className='bg-gray-100 rounded-md w-auto text-xs h-auto'>
                     { (firstQueryMade) ?
                             (loading) ?
                                 <Spinner className='pt-10' size={SpinnerSize.large} label='Fetching settings...'/>
